@@ -3,10 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>L02 Authorization</title>
+<title>AI-интервьюер — Вход</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/onboarding.css">
+<link rel="stylesheet" href="../css/auth.css">
 </head>
 <body>
-<main class="screen stub"><h1>L02 Authorization</h1><p>Этот экран ещё не перенесён из Figma.</p><p><a href="onboarding-1.html">← К первому экрану</a></p></main>
+<main class="screen fixed auth">
+  <img class="a" style="--x:55px;--y:51px;--w:280px;--h:201px" src="../images/robot.png" alt="">
+  <header class="topbar">
+    <div class="brand"><img class="logo" src="../images/logo.svg" alt="" width="24" height="24"><span>AI-интервьюер</span></div>
+    <a class="skip" href="register.html">Пропустить</a>
+  </header>
+  <h1 class="a h32 inter" style="--x:16px;--y:269px">С возвращением</h1>
+  <p class="a sub16 inter" style="--x:16px;--y:320px">Продолжите подготовку к IT-интервью</p>
+  <form action="main.html">
+    <label class="a lbl inter" style="--x:16px;--y:370px;--lh:16px" for="email">Email</label>
+    <input class="inp" style="--y:392.6px" id="email" name="email" type="email" autocomplete="email" required>
+    <label class="a lbl inter" style="--x:16px;--y:452px;--lh:16px" for="password">Пароль</label>
+    <input class="inp" style="--y:474.6px" id="password" name="password" type="password" autocomplete="current-password" required>
+    <a class="a lbl inter" style="--x:264px;--y:532px;--lh:16px" href="#">Забыли пароль?</a>
+    <button class="btn-main" style="--y:586px;--w:355px" type="submit">Войти</button>
+  </form>
+  <i class="line" style="--x:16px"></i>
+  <span class="a or inter" style="--x:184px;--y:647px">или</span>
+  <i class="line" style="--x:218px"></i>
+  <a class="btn-alt" href="main.html"><img src="../images/github-icon.svg" alt=""><span>Продолжить через GitHub</span></a>
+  <p class="a bottom" style="--x:70px;--y:760px"><span class="p">Нет аккаунта?</span> <a href="register.html">Зарегистрироваться</a></p>
+</main>
 </body>
 </html>

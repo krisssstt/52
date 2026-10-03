@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+.auth .topbar{position:relative;z-index:2}
+.inter{font-family:'Inter',sans-serif}
+.h32{font-size:32px;font-weight:700;line-height:32px;color:#194F37;white-space:nowrap}
+.sub16{font-size:16px;line-height:20px;color:#194F37;opacity:.75}
+.lbl{font-size:13px;font-weight:600;line-height:var(--lh,16px);color:#194F37;white-space:nowrap}
+.inp{position:absolute;left:var(--x,16px);top:var(--y);width:358px;height:46px;background:#fff;border:.8px solid #CFE8DD;border-radius:12px;padding:0 14px;font:400 15px Manrope,sans-serif;color:#194F37;outline:none}
+.inp:focus{border-color:#428266;box-shadow:0 0 0 3px rgba(129,181,158,.35)}
+.btn-main{position:absolute;left:16px;top:var(--y);width:var(--w,358px);height:50px;border:0;border-radius:12px;background:#31584B;color:#fff;font:600 15px Manrope,sans-serif;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .5s ease-out}
+.btn-main:hover{background:#244338}
+.btn-alt{position:absolute;left:16px;top:674px;width:358px;height:50px;border:.8px solid #194F37;border-radius:12px;background:#CFE8DD;color:#194F37;font:600 15px Manrope,sans-serif;display:flex;align-items:center;gap:13px;padding-left:60px;transition:background .5s ease-out}
+.btn-alt:hover{background:#BEDDD0}
+.btn-alt img{width:20px;height:20px}
+.line{position:absolute;left:var(--x);top:655px;width:153px;height:1px;background:#428266}
+.or{font-size:12px;line-height:15px;color:#194F37;opacity:.6}
+.bottom{font-size:15px;line-height:20px;text-decoration:underline;white-space:nowrap}
+.bottom .p{color:#428266}
+.bottom a{color:#194F37}
+.bottom .lk{color:#428266}
+.chk{-webkit-appearance:none;appearance:none;width:18px;height:18px;border:1.5px solid #194F37;border-radius:5px;background:#fff;margin:0;cursor:pointer}
+.chk:checked{background:#31584B;box-shadow:inset 0 0 0 3px #fff}
+.agree{font-size:13px;line-height:18px;color:#194F37;white-space:nowrap}
+.agree a{color:#428266;text-decoration:underline}

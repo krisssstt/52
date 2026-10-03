@@ -3,10 +3,33 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>L02 Register</title>
+<title>AI-интервьюер — Регистрация</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/onboarding.css">
+<link rel="stylesheet" href="../css/auth.css">
 </head>
 <body>
-<main class="screen stub"><h1>L02 Register</h1><p>Этот экран ещё не перенесён из Figma.</p><p><a href="onboarding-1.html">← К первому экрану</a></p></main>
+<main class="screen fixed auth">
+  <header class="topbar">
+    <div class="brand"><img class="logo" src="../images/logo.svg" alt="" width="24" height="24"><span>AI-интервьюер</span></div>
+    <a class="skip" href="register.html">Пропустить</a>
+  </header>
+  <h1 class="a h32" style="--x:16px;--y:107px">Создайте аккаунт</h1>
+  <p class="a sub16" style="--x:16px;--y:156px;--w:358px">Начните свой путь к уверенности на собеседованиях</p>
+  <form action="main.html">
+    <label class="a lbl" style="--x:16px;--y:219px;--lh:18px" for="name">Имя</label>
+    <input class="inp" style="--y:241.6px" id="name" name="name" type="text" autocomplete="name" required>
+    <label class="a lbl" style="--x:16px;--y:311px;--lh:18px" for="email">Email</label>
+    <input class="inp" style="--y:333.6px" id="email" name="email" type="email" autocomplete="email" required>
+    <label class="a lbl" style="--x:16px;--y:403px;--lh:18px" for="password">Пароль</label>
+    <input class="inp" style="--y:425.6px" id="password" name="password" type="password" autocomplete="new-password" minlength="6" required>
+    <label class="a lbl" style="--x:18px;--y:495px;--lh:18px" for="password2">Повторите пароль</label>
+    <input class="inp" style="--x:18px;--y:517.6px" id="password2" name="password2" type="password" autocomplete="new-password" minlength="6" required>
+    <input class="a chk" style="--x:26px;--y:596px" id="agree" name="agree" type="checkbox" required>
+    <label class="a agree" style="--x:50px;--y:596px" for="agree">Согласен с <a href="#">условиями</a> использования</label>
+    <button class="btn-main" style="--y:687px" type="submit">Создать аккаунт</button>
+  </form>
+  <p class="a bottom" style="--x:107px;--y:771px"><span class="p" style="color:#194F37">Уже есть аккаунт?</span> <a class="lk" href="login.html">Войти</a></p>
+</main>
 </body>
 </html>
