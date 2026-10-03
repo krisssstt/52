@@ -1,0 +1,19 @@
+.screen.fixed{height:844px;min-height:844px}
+.topbar .brand{gap:64px}
+.a{position:absolute;left:var(--x);top:var(--y);width:var(--w,auto);height:var(--h,auto)}
+.pic{display:block;object-fit:cover}
+.t1{font-size:36px;font-weight:700;color:#194F37;line-height:var(--lh,40px)}
+.lead2{font-size:20px;font-weight:400;line-height:24px;color:#194F37}
+.glass{background:rgba(245,248,246,.2);border:1px solid #AFCDBF;border-radius:12px;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.card-title{font-size:16px;font-weight:700;line-height:22px;color:#194F37;white-space:nowrap}
+.chip{height:30px;border-radius:12px;background:#CFE8DD;border:1px solid #81B59E;font-size:14px;font-weight:600;line-height:28px;text-align:center;color:#2C5643;white-space:nowrap}
+.tag{height:28px;border-radius:12px;background:#CFE8DD;display:flex;align-items:center;gap:7px;padding-left:7px;font:400 12px Inter,Manrope,sans-serif;color:#06331F}
+.tag img{width:16px;height:16px}
+.dot{position:absolute;top:var(--y);left:var(--x);width:16px;height:16px;border-radius:50%;background:#CFE8DD}
+.dot.on{background:#194F37}
+.count{font-size:12px;font-weight:700;line-height:48px;color:#194F37;white-space:nowrap}
+.nav-btn{position:absolute;top:740px;height:38px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:Manrope,sans-serif;transition:background .5s ease-out}
+.nav-back{left:41px;width:150px;background:#CFE8DD;color:#2C5643;font-size:14px;font-weight:600}
+.nav-back:hover{background:#BEDDD0}
+.nav-next{left:206px;width:var(--w,142px);background:#31584B;color:#fff;font-size:15px;font-weight:500}
+.nav-next:hover{background:#244338}
