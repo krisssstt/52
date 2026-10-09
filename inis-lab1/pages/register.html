@@ -2,34 +2,49 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <title>AI-интервьюер — Регистрация</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/onboarding.css">
 <link rel="stylesheet" href="../css/auth.css">
+<link rel="stylesheet" href="../css/ui.css">
+<script src="../js/app.js" defer></script>
+<script src="../js/notifications.js" defer></script>
 </head>
 <body>
-<main class="screen fixed auth">
-  <header class="topbar">
-    <div class="brand"><img class="logo" src="../images/logo.svg" alt="" width="24" height="24"><span>AI-интервьюер</span></div>
-    <a class="skip" href="register.html">Пропустить</a>
+<main class="screen auth">
+  <header class="app-header">
+    <span class="header-action"><img src="../images/logo.svg" alt=""></span>
+    <span class="brand-title">AI-Интервьюер</span>
+    <span aria-hidden="true"></span>
   </header>
-  <h1 class="a h32" style="--x:16px;--y:107px">Создайте аккаунт</h1>
-  <p class="a sub16" style="--x:16px;--y:156px;--w:358px">Начните свой путь к уверенности на собеседованиях</p>
-  <form action="main.html">
-    <label class="a lbl" style="--x:16px;--y:219px;--lh:18px" for="name">Имя</label>
-    <input class="inp" style="--y:241.6px" id="name" name="name" type="text" autocomplete="name" required>
-    <label class="a lbl" style="--x:16px;--y:311px;--lh:18px" for="email">Email</label>
-    <input class="inp" style="--y:333.6px" id="email" name="email" type="email" autocomplete="email" required>
-    <label class="a lbl" style="--x:16px;--y:403px;--lh:18px" for="password">Пароль</label>
-    <input class="inp" style="--y:425.6px" id="password" name="password" type="password" autocomplete="new-password" minlength="6" required>
-    <label class="a lbl" style="--x:18px;--y:495px;--lh:18px" for="password2">Повторите пароль</label>
-    <input class="inp" style="--x:18px;--y:517.6px" id="password2" name="password2" type="password" autocomplete="new-password" minlength="6" required>
-    <input class="a chk" style="--x:26px;--y:596px" id="agree" name="agree" type="checkbox" required>
-    <label class="a agree" style="--x:50px;--y:596px" for="agree">Согласен с <a href="#">условиями</a> использования</label>
-    <button class="btn-main" style="--y:687px" type="submit">Создать аккаунт</button>
-  </form>
-  <p class="a bottom" style="--x:107px;--y:771px"><span class="p" style="color:#194F37">Уже есть аккаунт?</span> <a class="lk" href="login.html">Войти</a></p>
+  <section class="auth-content content-inner auth-page" aria-labelledby="auth-title">
+    <h1 id="auth-title">Создайте аккаунт</h1>
+    <p class="auth-description">Начните свой путь к уверенности на собеседованиях</p>
+    <form class="auth-form" action="main.html">
+      <div class="form-field">
+        <label for="name">Имя</label>
+        <input class="form-control" id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input class="form-control" id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="form-field">
+        <label for="password">Пароль</label>
+        <input class="form-control" id="password" name="password" type="password" autocomplete="new-password" minlength="6" required>
+      </div>
+      <div class="form-field">
+        <label for="password2">Повторите пароль</label>
+        <input class="form-control" id="password2" name="password2" type="password" autocomplete="new-password" minlength="6" required>
+      </div>
+      <div class="agreement">
+        <input class="chk" id="agree" name="agree" type="checkbox" required>
+        <label class="agree" for="agree">Согласен с <a href="#">условиями</a> использования</label>
+      </div>
+      <button class="form-button" type="submit">Создать аккаунт</button>
+    </form>
+    <p class="auth-bottom">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+  </section>
 </main>
 </body>
 </html>

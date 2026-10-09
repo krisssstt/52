@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+@import url('./training-fonts.css');
 :root{--bg:#F5F8F6;--dark:#194F37;--brand:#0D6C42;--accent:#428266;--btn:#315849;--soft:#CFE8DD;--mid:#81B59E}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{min-height:100%;background:#e9eeeb;font-family:'Manrope',sans-serif;color:var(--dark)}

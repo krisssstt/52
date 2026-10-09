@@ -2,68 +2,77 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <title>AI-интервьюер — Профиль</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/onboarding.css">
-<link rel="stylesheet" href="../css/main.css">
 <link rel="stylesheet" href="../css/profile.css">
+<link rel="stylesheet" href="../css/ui.css">
+<script src="../js/app.js" defer></script>
+<script src="../js/notifications.js" defer></script>
 </head>
 <body>
-
-<main class="screen fixed home">
-  <div class="a bar" style="--y:39px"></div>
-  <a class="a" style="--x:16.5px;--y:45.5px;--w:25.0px;--h:25.0px" href="menu.html" aria-label="Открыть меню"><img src="../images/icons/ic-menu.svg" alt="" width="25.0" height="25.0"></a>
-  <h1 class="a tx" style="--x:155.5px;--y:44.6px;font-size:18px;line-height:25px;color:#0D6C42;font-weight:600" data-w="77.6">Профиль</h1>
-  <a class="a" style="--x:350.9px;--y:45.3px;--w:20.2px;--h:22.4px" href="#" aria-label="Уведомления"><img src="../images/icons/ic-bell.svg" alt="" width="20.2" height="22.4"></a>
-  <h2 class="a tx" style="--x:26.6px;--y:82.7px;font-size:17px;line-height:24px;color:#428266;font-weight:600" data-w="138.0">Личные данные</h2>
-  <i class="a avatar" style="--x:25px;--y:108px"></i>
-  <span class="a tx" style="--x:48.5px;--y:129.6px;font-size:18px;line-height:25px;color:#2C5643;font-weight:600" data-w="21.4">KK</span>
-  <p class="a tx" style="--x:116.5px;--y:116.6px;font-size:18px;line-height:25px;color:#2C5643;font-weight:600" data-w="169.1">Кристина Ковалева</p>
-  <p class="a tx" style="--x:115.6px;--y:142.6px;font-size:14.5px;line-height:20px;color:#14AF6B;font-weight:600" data-w="155.9">QA Engineer · Middle</p>
-  <i class="a sep3" style="--x:24px;--y:189px;--w:337px"></i>
-  <form id="pf" autocomplete="on">
-  <label class="a tx" for="fn" style="--x:29.2px;--y:209.6px;font-size:14px;line-height:20px;color:#5D5F5E;font-weight:500" data-w="25.9">Имя</label>
-  <label class="a tx" for="ln" style="--x:211.6px;--y:209.6px;font-size:14px;line-height:20px;color:#5D5F5E;font-weight:500" data-w="59.8">Фамилия</label>
-  <input class="pf-in" style="--x:22.5px;--y:238.5px;--w:159px;--pl:13px" id="fn" name="firstName" type="text" value="Кристина" autocomplete="given-name">
-  <input class="pf-in" style="--x:201.5px;--y:238.5px;--w:159px;--pl:15px" id="ln" name="lastName" type="text" value="Ковалева" autocomplete="family-name">
-  <label class="a tx" for="em" style="--x:29.2px;--y:291.4px;font-size:14px;line-height:20px;color:#5D5F5E;font-weight:500" data-w="33.7">Email</label>
-  <input class="pf-in" style="--x:23.5px;--y:323.5px;--w:335px;--pl:11.5px" id="em" name="email" type="email" value="kristinakovalyova23@gmail.com" autocomplete="email">
-  <label class="a tx" for="sp" style="--x:28.6px;--y:373.4px;font-size:14px;line-height:20px;color:#5D5F5E;font-weight:500" data-w="108.0">Специализация</label>
-  <select class="pf-in" style="--x:25.5px;--y:404.5px;--w:335px;--pl:11px" id="sp" name="specialization"><option selected>QA Engineer</option><option>Backend Developer</option><option>Frontend Developer</option><option>Data Analyst</option></select>
-  <img class="a nopt" style="--x:326.5px;--y:420.1px;--w:13.0px;--h:8.4px" src="../images/icons/ic-chevron.svg" alt="">
-  <label class="a tx" for="gr" style="--x:35.2px;--y:455.3px;font-size:14px;line-height:20px;color:#5D5F5E;font-weight:500" data-w="39.3">Грейд</label>
-  <input class="pf-in" style="--x:25.5px;--y:484.5px;--w:335px;--pl:13.5px" id="gr" name="grade" type="text" value="Middle">
-  <p class="a tx" style="--x:35.2px;--y:535.6px;font-size:14px;line-height:20px;color:#5D5F5E;font-weight:500" data-w="53.4">Навыки:</p>
-  <ul class="chips" id="chips" aria-label="Навыки">
-    <li class="chip2" style="width:69px"><span>HTTP</span><button type="button" aria-label="Удалить навык HTTP"><img src="../images/icons/ic-x.svg" alt="" width="7.8" height="7.8"></button></li>
-    <li class="chip2" style="width:99px"><span>API testing</span><button type="button" aria-label="Удалить навык API testing"><img src="../images/icons/ic-x.svg" alt="" width="7.8" height="7.8"></button></li>
-    <li class="chip2" style="width:87px"><span>Postman</span><button type="button" aria-label="Удалить навык Postman"><img src="../images/icons/ic-x.svg" alt="" width="7.8" height="7.8"></button></li>
-    <li class="chip2" style="width:52px"><span>SQL</span><button type="button" aria-label="Удалить навык SQL"><img src="../images/icons/ic-x.svg" alt="" width="7.8" height="7.8"></button></li>
-    <li class="chip2" style="width:95px"><span>DevTools</span><button type="button" aria-label="Удалить навык DevTools"><img src="../images/icons/ic-x.svg" alt="" width="7.8" height="7.8"></button></li>
-  </ul>
-  <input class="pf-in new" style="--x:25.5px;--y:643.5px;--w:283px;--pl:15px" id="newSkill" type="text" placeholder="Новый навык" aria-label="Новый навык">
-  <button class="add-btn" id="addSkill" type="button" aria-label="Добавить навык"></button>
-  <button class="save" type="submit">Сохранить</button>
-  </form>
-  <div class="a tabbar" style="--y:748px;left:-2px"></div>
-  <a class="a hit" style="--x:-8.0px;--y:754px;--w:81px;--h:90px" href="main.html" aria-label="Главная"></a>
-  <img class="a nopt" style="--x:13.7px;--y:763.5px;--w:38.6px;--h:35.5px" src="../images/icons/ic-nav-home-off.svg" alt="">
-  <span class="a tx" style="--x:9.0px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="45.5">Главная</span>
-  <a class="a hit" style="--x:73.1px;--y:754px;--w:81px;--h:90px" href="training.html" aria-label="Тренировка"></a>
-  <img class="a nopt" style="--x:96.8px;--y:764.7px;--w:34.4px;--h:31.4px" src="../images/icons/ic-nav-chat.svg" alt="">
-  <span class="a tx" style="--x:78.3px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="69.1">Тренировка</span>
-  <a class="a hit" style="--x:154.2px;--y:754px;--w:81px;--h:90px" href="kb-1.html" aria-label="База"></a>
-  <img class="a nopt" style="--x:175.7px;--y:763.0px;--w:38.7px;--h:36.1px" src="../images/icons/ic-nav-books.svg" alt="">
-  <span class="a tx" style="--x:181.0px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="25.9">База</span>
-  <a class="a hit" style="--x:238.1px;--y:754px;--w:81px;--h:90px" href="analytics.html" aria-label="Прогресс"></a>
-  <img class="a nopt" style="--x:260.5px;--y:766.7px;--w:31.0px;--h:28.6px" src="../images/icons/ic-nav-chart.svg" alt="">
-  <span class="a tx" style="--x:250.0px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="55.6">Прогресс</span>
-  <a class="a hit" style="--x:316.2px;--y:754px;--w:81px;--h:90px" href="profile-1.html" aria-label="Я"></a>
-  <img class="a nopt" style="--x:339.8px;--y:763.8px;--w:34.4px;--h:34.4px" src="../images/icons/ic-nav-profile-on.svg" alt="">
-  <span class="a tx" style="--x:352.7px;--y:811.9px;font-size:12px;line-height:17px;color:#428266;font-weight:500" data-w="6.5">Я</span>
+<main class="screen profile">
+  <header class="app-header">
+    <button class="header-action" type="button" data-open-menu aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="side-menu"><img src="../images/icons/ic-menu.svg" alt=""></button>
+    <h1>Профиль</h1>
+    <a class="header-action" href="profile-4.html" aria-label="Уведомления"><img src="../images/icons/ic-bell.svg" alt=""></a>
+  </header>
+  <section class="profile-content content-inner form-page" aria-label="Редактирование профиля">
+    <div class="profile-summary">
+      <span class="avatar" aria-hidden="true">КК</span>
+      <div><h2>Кристина Ковалева</h2><p>QA Engineer · Middle</p></div>
+    </div>
+    <form class="profile-form" id="pf" autocomplete="on">
+      <div class="form-field">
+        <label for="fn">Имя</label>
+        <input class="form-control" id="fn" name="firstName" type="text" value="Кристина" autocomplete="given-name">
+      </div>
+      <div class="form-field">
+        <label for="ln">Фамилия</label>
+        <input class="form-control" id="ln" name="lastName" type="text" value="Ковалева" autocomplete="family-name">
+      </div>
+      <div class="form-field">
+        <label for="em">Email</label>
+        <input class="form-control" id="em" name="email" type="email" value="kristinakovalyova23@gmail.com" autocomplete="email">
+      </div>
+      <div class="form-field">
+        <label id="specialization-label" for="sp">Специализация</label>
+        <button class="form-control profile-select specialization-select" id="sp" type="button" role="combobox" aria-labelledby="specialization-label" aria-haspopup="listbox" aria-expanded="false" aria-controls="specialization-options"><span>QA Engineer</span></button>
+        <input type="hidden" id="specialization-value" name="specialization" value="QA Engineer">
+      </div>
+      <div class="form-field">
+        <label for="gr">Грейд</label>
+        <input class="form-control" id="gr" name="grade" type="text" value="Middle">
+      </div>
+      <div class="skills-field">
+        <p class="field-label">Навыки</p>
+        <ul class="chips" id="chips" aria-label="Навыки">
+          <li class="chip2"><span>HTTP</span><button type="button" aria-label="Удалить навык HTTP"><img src="../images/icons/ic-x.svg" alt=""></button></li>
+          <li class="chip2"><span>API testing</span><button type="button" aria-label="Удалить навык API testing"><img src="../images/icons/ic-x.svg" alt=""></button></li>
+          <li class="chip2"><span>Postman</span><button type="button" aria-label="Удалить навык Postman"><img src="../images/icons/ic-x.svg" alt=""></button></li>
+          <li class="chip2"><span>SQL</span><button type="button" aria-label="Удалить навык SQL"><img src="../images/icons/ic-x.svg" alt=""></button></li>
+          <li class="chip2"><span>DevTools</span><button type="button" aria-label="Удалить навык DevTools"><img src="../images/icons/ic-x.svg" alt=""></button></li>
+        </ul>
+      </div>
+      <div class="form-field">
+        <label for="newSkill">Новый навык</label>
+        <div class="skill-entry">
+          <input class="form-control" id="newSkill" type="text" placeholder="Название навыка">
+          <button class="add-btn" id="addSkill" type="button" aria-label="Добавить навык"></button>
+        </div>
+      </div>
+      <button class="form-button save" type="submit">Сохранить</button>
+    </form>
+  </section>
+  <nav class="app-nav" aria-label="Основная навигация">
+    <a href="main.html"><img src="../images/icons/ic-nav-home-off.svg" alt=""><span>Главная</span></a>
+    <a href="training.html"><img src="../images/icons/ic-nav-chat.svg" alt=""><span>Тренировка</span></a>
+    <a href="kb-1.html"><img src="../images/icons/ic-nav-books.svg" alt=""><span>База</span></a>
+    <a href="analytics.html"><img src="../images/icons/ic-nav-chart.svg" alt=""><span>Прогресс</span></a>
+    <a href="profile-1.html" aria-current="page"><img src="../images/icons/ic-nav-profile-on.svg" alt=""><span>Профиль</span></a>
+  </nav>
 </main>
-<script src="../js/fit.js"></script>
 <script src="../js/profile.js"></script>
+<script src="../js/specialization.js"></script>
 </body>
 </html>

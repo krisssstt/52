@@ -2,25 +2,26 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <title>AI-интервьюер — Onboarding 3</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/ui.css">
 <link rel="stylesheet" href="../css/onboarding.css">
 </head>
-<body>
-<main class="screen fixed">
-  <header class="topbar">
+<body class="onboarding">
+<main class="onboarding-screen">
+<header class="topbar">
     <div class="brand"><img class="logo" src="../images/logo.svg" alt="" width="24" height="24"><span>AI-интервьюер</span></div>
     <a class="skip" href="register.html">Пропустить</a>
   </header>
-  <img class="a pic" style="--x:47px;--y:79px" width="295" height="281" src="../images/onboarding-3.png" alt="Иллюстрация: тренировка интервью с RAG-подсказками">
-  <h1 class="a t1" style="--x:41px;--y:374px;--w:307px;--lh:46px">Тренируйтесь как на интервью</h1>
-  <p class="a lead2" style="--x:43px;--y:477px;--w:305px">Система задаёт вопросы по вашему стеку, принимает текстовые и голосовые ответы и предлагает контекстные RAG-подсказки.</p>
-  <div class="a tag" style="--x:41px;--y:615px;--w:198px"><img src="../images/rag-icon.svg" alt=""><span>RAG-контекст подключен</span></div>
-  <i class="dot" style="--x:116px;--y:681px"></i><i class="dot" style="--x:160px;--y:681px"></i><i class="dot on" style="--x:204px;--y:681px"></i><i class="dot" style="--x:248px;--y:681px"></i>
-  <div class="a count" style="--x:177px;--y:689px">3 из 4</div>
-  <a class="nav-btn nav-back" href="onboarding-2.html">Назад</a>
-  <a class="nav-btn nav-next" style="--w:136px" href="onboarding-4.html">Далее</a>
+<div class="onboarding-scroll"><div class="onboarding-content">
+<img class="onboarding-illustration" width="295" height="281" src="../images/onboarding-3.png" alt="Иллюстрация: тренировка интервью с RAG-подсказками">
+<h1 class="onboarding-title">Тренируйтесь как на интервью</h1>
+<p class="onboarding-description">Система задаёт вопросы по вашему стеку, принимает текстовые и голосовые ответы и предлагает контекстные RAG-подсказки.</p>
+<div class="onboarding-rag"><img src="../images/rag-icon.svg" alt=""><span>RAG-контекст подключен</span></div>
+<div class="onboarding-progress"><div class="dots" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i></div><p class="counter">3 из 4</p></div>
+<div class="onboarding-actions"><a class="form-button secondary" href="onboarding-2.html">Назад</a><a class="form-button" href="onboarding-4.html">Далее</a></div>
+</div></div>
 </main>
 </body>
 </html>

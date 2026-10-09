@@ -2,70 +2,60 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <title>AI-интервьюер — Аналитика</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/onboarding.css">
-<link rel="stylesheet" href="../css/main.css">
-<link rel="stylesheet" href="../css/screens2.css">
+<link rel="stylesheet" href="../css/ui.css">
+<script src="../js/app.js" defer></script>
+<script src="../js/notifications.js" defer></script>
 </head>
 <body>
 
 <main class="screen fixed home">
-  <div class="a bar" style="--y:39px"></div>
-  <a class="a" style="--x:16.5px;--y:45.5px;--w:25.0px;--h:25.0px" href="menu.html" aria-label="Открыть меню"><img src="../images/icons/ic-menu.svg" alt="" width="25.0" height="25.0"></a>
-  <h1 class="a tx an0" style="--x:146.6px;--y:44.6px" data-w="92.9">Аналитика</h1>
-  <a class="a" style="--x:350.9px;--y:45.3px;--w:20.2px;--h:22.4px" href="#" aria-label="Уведомления"><img src="../images/icons/ic-bell.svg" alt="" width="20.2" height="22.4"></a>
-  <nav aria-label="Навигационная цепочка">
-  <a class="a tx an1" href="analytics.html" style="--x:27.2px;--y:87.0px" data-w="64.8">Прогресс</a>
-  <span class="a tx an2" style="--x:100.7px;--y:87.0px" data-w="84.3">› Аналитика</span>
+  <div class="app-header-group">
+  <header class="app-header">
+    <button class="header-action" type="button" data-open-menu aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="side-menu"><img src="../images/icons/ic-menu.svg" alt=""></button>
+    <h1>Прогресс</h1>
+    <a class="header-action" href="profile-4.html" aria-label="Уведомления"><img src="../images/icons/ic-bell.svg" alt=""></a>
+  </header>
+  <div class="header-period-controls"><div class="seg" id="progress-period" role="group" aria-label="Период прогресса">
+      <button type="button" class="on" data-days="7" aria-pressed="true">7 дней</button>
+      <button type="button" data-days="30" aria-pressed="false">30 дней</button>
+      <button type="button" id="custom-period" aria-pressed="false" aria-haspopup="dialog" aria-controls="period-dialog">Период</button>
+    </div></div>
+  </div>
+  <div class="content-inner">
+    <p class="muted" id="selected-period" role="status"></p>
+    <div class="dashboard-grid">
+      <section class="ui-card"><h2>Ваш прогресс</h2><div class="progress-summary"><div class="score-ring"><span>70%</span></div><div><h3>Уровень подготовки</h3><p><span class="pill">↗ +12%</span> <span id="progress-duration">за 7 дней</span></p></div></div></section>
+      <section class="ui-card"><h2>Компетенции</h2><div class="skill-progress"><div><span>API Testing</span><strong>78%</strong></div><progress max="100" value="78" aria-label="API Testing: 78 процентов">78%</progress></div><div class="skill-progress"><div><span>SQL</span><strong>56%</strong></div><progress max="100" value="56" aria-label="SQL: 56 процентов">56%</progress></div><div class="skill-progress"><div><span>Тест дизайн</span><strong>84%</strong></div><progress max="100" value="84" aria-label="Тест дизайн: 84 процентов">84%</progress></div></section>
+    </div><section class="ui-card recommendation"><h2><img src="../images/icons/ic-ai-brain.svg" alt="">AI-Рекомендация</h2><p>Повторите SQL JOIN: эта тема чаще вызывает затруднения.</p><a class="text-link" href="training.html">Открыть план подготовки ›</a></section>
+  </div>
+  <nav class="app-nav" aria-label="Основная навигация">
+    <a href="main.html"><img src="../images/icons/ic-nav-home-off.svg" alt=""><span>Главная</span></a>
+    <a href="training.html"><img src="../images/icons/ic-nav-chat.svg" alt=""><span>Тренировка</span></a>
+    <a href="kb-1.html"><img src="../images/icons/ic-nav-books.svg" alt=""><span>База</span></a>
+    <a href="analytics.html" aria-current="page"><img src="../images/icons/ic-nav-chart-on.svg" alt=""><span>Прогресс</span></a>
+    <a href="profile-1.html"><img src="../images/icons/ic-nav-profile.svg" alt=""><span>Профиль</span></a>
   </nav>
-  <div class="a seg" id="seg" style="--x:24px;--y:127px;--w:345px;--h:33px" role="tablist"><button type="button" class="on" role="tab">7 дней</button><button type="button" role="tab">30 дней</button><button type="button" role="tab">Все</button></div>
-  <section class="a card2" style="--x:26px;--y:185px;--w:342px;--h:172px"></section>
-  <h2 class="a tx an3" style="--x:49.3px;--y:201.3px" data-w="124.6">Ваш прогресс</h2>
-  <i class="a vdiv" style="--x:193px;--y:252px;--h:70px"></i>
-  <img class="a nopt" style="--x:61px;--y:235.5px;--w:104px;--h:104px" src="../images/icons/ic-donut.svg" alt="">
-  <span class="a tx an4" style="--x:92.0px;--y:272.2px" data-w="39.3">70%</span>
-  <p class="a tx an5" style="--x:210.4px;--y:258.0px" data-w="141.1">Уровень подготовки</p>
-  <i class="a badge" style="--x:211px;--y:288px;--w:75px;--h:30px"></i>
-  <img class="a nopt" style="--x:223.0px;--y:298.0px;--w:10.0px;--h:10.0px" src="../images/icons/ic-trend.svg" alt="">
-  <span class="a tx an6" style="--x:240.0px;--y:293.0px" data-w="36.2">+12%</span>
-  <span class="a tx an7" style="--x:290.9px;--y:294.5px" data-w="55.2">за 7 дней</span>
-  <h2 class="a tx an8" style="--x:36.3px;--y:373.4px" data-w="120.2">Компетенции</h2>
-  <section class="a card2" style="--x:24px;--y:400px;--w:342px;--h:181px"></section>
-  <p class="a tx an7" style="--x:45.5px;--y:418.4px" data-w="63.7">API Testing</p>
-  <i class="a trk" style="--x:46px;--y:445px;--w:270px"></i><i class="a fil" style="--x:46px;--y:445px;--w:210px"></i>
-  <p class="a tx an7" style="--x:45.8px;--y:474.7px" data-w="22.6">SQL</p>
-  <i class="a trk" style="--x:46px;--y:500px;--w:270px"></i><i class="a fil" style="--x:46px;--y:500px;--w:151px"></i>
-  <span class="a tx an9" style="--x:326.0px;--y:495.5px" data-w="23.7">56%</span>
-  <p class="a tx an7" style="--x:45.7px;--y:529.7px" data-w="71.0">Тест дизайн</p>
-  <i class="a trk" style="--x:46px;--y:554px;--w:270px"></i><i class="a fil" style="--x:46px;--y:554px;--w:226px"></i>
-  <span class="a tx an9" style="--x:325.8px;--y:549.5px" data-w="24.3">84%</span>
-  <section class="a airec" style="--x:26px;--y:599px;--w:342px;--h:132px"></section>
-  <img class="a nopt" style="--x:39.1px;--y:617.1px;--w:21.8px;--h:21.8px" src="../images/icons/ic-ai-brain.svg" alt="">
-  <p class="a tx an10" style="--x:78.5px;--y:618.3px" data-w="121.4">AI-Рекомендация</p>
-  <span class="a tx an11" style="--x:44.2px;--y:648.0px" data-w="239.8">Повторите SQL JOIN: эта тема чаще</span>
-  <span class="a tx an11" style="--x:44.2px;--y:670.5px" data-w="159.5">вызывает затруднения.</span>
-  <a class="a tx an12" href="training.html" style="--x:43.9px;--y:700.9px" data-w="153.2">Открыть план подготовки</a>
-  <img class="a nopt" style="--x:206.2px;--y:706.0px;--w:10.5px;--h:9.0px" src="../images/icons/ic-arrow-right.svg" alt="">
-  <div class="a tabbar" style="--y:748px;left:0px"></div>
-  <a class="a hit" style="--x:-6.0px;--y:754px;--w:81px;--h:90px" href="main.html" aria-label="Главная"></a>
-  <img class="a nopt" style="--x:15.7px;--y:763.5px;--w:38.6px;--h:35.5px" src="../images/icons/ic-nav-home-off.svg" alt="">
-  <span class="a tx an13" style="--x:11.0px;--y:811.9px" data-w="45.5">Главная</span>
-  <a class="a hit" style="--x:75.1px;--y:754px;--w:81px;--h:90px" href="training.html" aria-label="Тренировка"></a>
-  <img class="a nopt" style="--x:98.8px;--y:764.7px;--w:34.4px;--h:31.4px" src="../images/icons/ic-nav-chat.svg" alt="">
-  <span class="a tx an13" style="--x:80.3px;--y:811.9px" data-w="69.1">Тренировка</span>
-  <a class="a hit" style="--x:156.2px;--y:754px;--w:81px;--h:90px" href="kb-1.html" aria-label="База"></a>
-  <img class="a nopt" style="--x:177.7px;--y:763.0px;--w:38.7px;--h:36.1px" src="../images/icons/ic-nav-books.svg" alt="">
-  <span class="a tx an13" style="--x:183.0px;--y:811.9px" data-w="25.9">База</span>
-  <a class="a hit" style="--x:240.1px;--y:754px;--w:81px;--h:90px" href="analytics.html" aria-label="Прогресс"></a>
-  <img class="a nopt" style="--x:262.5px;--y:766.7px;--w:31.0px;--h:28.6px" src="../images/icons/ic-nav-chart-on.svg" alt="">
-  <span class="a tx an14" style="--x:252.0px;--y:811.9px" data-w="55.6">Прогресс</span>
-  <a class="a hit" style="--x:318.2px;--y:754px;--w:81px;--h:90px" href="profile-1.html" aria-label="Я"></a>
-  <img class="a nopt" style="--x:341.8px;--y:763.8px;--w:34.4px;--h:34.4px" src="../images/icons/ic-nav-profile.svg" alt="">
-  <span class="a tx an13" style="--x:354.7px;--y:811.9px" data-w="6.5">Я</span>
 </main>
-<script src="../js/fit.js"></script>
-<script src="../js/screens2.js"></script>
+<dialog class="period-dialog" id="period-dialog" aria-labelledby="period-title" aria-describedby="period-instruction">
+  <div class="period-dialog-heading"><h2 id="period-title">Выберите период</h2><button class="icon-button" type="button" id="close-period" aria-label="Закрыть выбор периода"><img src="../images/icons/ic-close.svg" alt=""></button></div>
+  <p class="muted" id="period-instruction">Выберите начальную и конечную даты.</p>
+  <div class="period-range-summary" id="period-range-fields">
+    <button type="button" id="choose-period-start" aria-controls="period-calendar" aria-expanded="false"><span>Начало</span><strong id="period-start">—</strong></button>
+    <button type="button" id="choose-period-end" aria-controls="period-calendar" aria-expanded="false"><span>Конец</span><strong id="period-end">—</strong></button>
+  </div>
+  <p id="period-error" role="alert" hidden>Конец периода должен быть не раньше начала.</p>
+  <div class="period-calendar" id="period-calendar" hidden>
+  <button type="button" class="calendar-back" id="back-to-period">‹ К выбору периода</button>
+  <div class="calendar-heading"><button type="button" class="icon-button" id="previous-month" aria-label="Предыдущий месяц">‹</button><h3 id="calendar-month" aria-live="polite"></h3><button type="button" class="icon-button" id="next-month" aria-label="Следующий месяц">›</button></div>
+  <div class="calendar-weekdays" aria-hidden="true"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+  <div class="calendar-days" id="calendar-days" role="group" aria-labelledby="calendar-month"></div>
+  </div>
+  <div class="period-actions"><button type="button" class="form-button secondary" id="cancel-period">Отмена</button><button type="button" class="form-button" id="apply-period">Применить</button></div>
+</dialog>
+
+<script src="../js/progress.js"></script>
 </body>
 </html>

@@ -2,61 +2,43 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <title>AI-интервьюер — Персональный план</title>
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/onboarding.css">
-<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/ui.css">
+<script src="../js/daily-tasks.js" defer></script>
+<script src="../js/app.js" defer></script>
+<script src="../js/notifications.js" defer></script>
 </head>
 <body>
 
 <main class="screen fixed home">
-  <div class="a bar" style="--y:39px"></div>
-  <a class="a" style="--x:16.5px;--y:45.5px;--w:25.0px;--h:25.0px" href="menu.html" aria-label="Открыть меню"><img src="../images/icons/ic-menu.svg" alt="" width="25.0" height="25.0"></a>
-  <h1 class="a tx" style="--x:113.5px;--y:46.5px;font-size:14.5px;line-height:20px;color:#0D6C42;font-weight:600" data-w="164.6">Персональный план</h1>
-  <a class="a" style="--x:353.9px;--y:45.3px;--w:20.2px;--h:22.4px" href="#" aria-label="Уведомления"><img src="../images/icons/ic-bell.svg" alt="" width="20.2" height="22.4"></a>
-  <nav aria-label="Навигационная цепочка">
-  <a href="main.html" class="a tx" style="--x:29.2px;--y:99.8px;font-size:14.5px;line-height:20px;color:#428266;font-weight:500" data-w="53.1">Главная</a>
-  <span class="a tx" style="--x:91.5px;--y:99.5px;font-size:14.5px;line-height:20px;color:#06331F;font-weight:500" data-w="149.3">› Персональный план</span>
+  <header class="app-header">
+    <button class="header-action" type="button" data-open-menu aria-label="Открыть меню" aria-haspopup="dialog" aria-controls="side-menu"><img src="../images/icons/ic-menu.svg" alt=""></button>
+    <h1>Персональный план</h1>
+    <a class="header-action" href="profile-4.html" aria-label="Уведомления"><img src="../images/icons/ic-bell.svg" alt=""></a>
+  </header>
+  <div class="content-inner">
+    <section class="ui-card recommendation resume-interview" aria-labelledby="resume-title">
+      <h2 id="resume-title">Продолжить прохождение интервью?</h2>
+      <p>Вернитесь к вопросу и продолжите с сохранённым ответом.</p>
+      <a class="form-button" id="resume-interview" href="training-question-1.html">Продолжить интервью</a>
+    </section>
+    <div class="dashboard-grid">
+      <section class="ui-card"><h2>Ваш прогресс</h2><p>QA Engineer · Middle</p><div class="skill-progress"><div><span>Подготовка</span><strong>68%</strong></div><progress max="100" value="68" aria-label="Подготовка: 68 процентов">68%</progress></div><p class="muted">+12% за последние 7 дней</p></section>
+      <section class="ui-card"><h2>План на сегодня</h2>
+        <ul class="daily-plan" id="daily-plan" aria-label="План на сегодня"></ul>
+        <aside class="recommendation ui-card"><h3><img src="../images/icons/ic-ai-brain.svg" alt="">AI-Рекомендация</h3><p>Уделите внимание статусам HTTP перед следующей тренировкой.</p><p class="muted">Основано на истории ответов.</p></aside>
+      </section>
+    </div>
+  </div>
+  <nav class="app-nav" aria-label="Основная навигация">
+    <a href="main.html" aria-current="page"><img src="../images/icons/ic-nav-home.svg" alt=""><span>Главная</span></a>
+    <a href="training.html"><img src="../images/icons/ic-nav-chat.svg" alt=""><span>Тренировка</span></a>
+    <a href="kb-1.html"><img src="../images/icons/ic-nav-books.svg" alt=""><span>База</span></a>
+    <a href="analytics.html"><img src="../images/icons/ic-nav-chart.svg" alt=""><span>Прогресс</span></a>
+    <a href="profile-1.html"><img src="../images/icons/ic-nav-profile.svg" alt=""><span>Профиль</span></a>
   </nav>
-  <p class="a tx" style="--x:28.6px;--y:137.6px;font-size:14.5px;line-height:20px;color:#194F37;font-weight:500" data-w="315.5">QA Инженер, готовы продолжить подготовку?</p>
-  <section class="a card" style="--x:17px;--y:175px;--w:356px;--h:177px"></section>
-  <span class="a tx" style="--x:40.3px;--y:190.9px;font-size:16px;line-height:22px;color:#06331F;font-weight:600" data-w="107.0">Ваш прогресс</span>
-  <span class="a tx" style="--x:39.6px;--y:227.6px;font-size:14.5px;line-height:20px;color:#194F37;font-weight:500" data-w="134.6">QA Engineer · Middle</span>
-  <span class="a tx" style="--x:308.6px;--y:263.9px;font-size:21px;line-height:29px;color:#194F37;font-weight:700" data-w="39.9">68%</span>
-  <span class="a tx" style="--x:39.9px;--y:307.0px;font-size:11.5px;line-height:16px;color:#000;font-weight:400" data-w="148.7">+12% за последние 7 дней</span>
-  <img class="a" style="--x:39.8px;--y:267.1px;--w:215.4px;--h:19.8px" src="../images/icons/ic-progress.svg" alt="Прогресс 68%">
-  <section class="a card" style="--x:18px;--y:370px;--w:356px;--h:369px"></section>
-  <span class="a tx" style="--x:48.3px;--y:395.1px;font-size:15px;line-height:21px;color:#06331F;font-weight:600" data-w="127.7">План на сегодня</span>
-  <input class="a ring" style="--x:47.2px;--y:437.2px" type="checkbox" id="c1" aria-label="Повторить HTTP-методы">
-  <label for="c1" class="a tx" style="--x:80.2px;--y:435.6px;font-size:14px;line-height:20px;color:#194F37;font-weight:500" data-w="169.7">Повторить HTTP-методы</label>
-  <input class="a ring" style="--x:47.2px;--y:476.2px" type="checkbox" id="c2" aria-label="Пройти 10 вопросов по API">
-  <label for="c2" class="a tx" style="--x:80.2px;--y:474.5px;font-size:14.5px;line-height:20px;color:#194F37;font-weight:500" data-w="179.2">Пройти 10 вопросов по API</label>
-  <input class="a ring" style="--x:47.2px;--y:512.2px" type="checkbox" id="c3" aria-label="Разобрать ошибки по SQL JOIN">
-  <label for="c3" class="a tx" style="--x:78.2px;--y:510.6px;font-size:14.5px;line-height:20px;color:#194F37;font-weight:500" data-w="207.1">Разобрать ошибки по SQL JOIN</label>
-  <i class="a sep" style="--x:36px;--y:550px;--w:316px"></i>
-  <div class="a ai" style="--x:36px;--y:571px;--w:316px;--h:143px"></div>
-  <img class="a" style="--x:49.1px;--y:587.1px;--w:21.8px;--h:21.8px" src="../images/icons/ic-ai-brain.svg" alt="">
-  <span class="a tx" style="--x:79.5px;--y:587.9px;font-size:13.5px;line-height:19px;color:#06331F;font-weight:600" data-w="119.3">AI-Рекомендация</span>
-  <p class="a tx" style="--x:77.4px;--y:621.4px;font-size:14.5px;line-height:24px;color:#194F37;font-weight:400">Уделите внимание статусам HTTP<br>перед следующей тренировкой.</p>
-  <span class="a tx" style="--x:77.6px;--y:675.7px;font-size:12px;line-height:17px;color:#428266;font-weight:400" data-w="178.0">Основано на истории ответов.</span>
-  <div class="a tabbar" style="--y:748px"></div>
-  <a class="a hit" style="--x:-6.0px;--y:754px;--w:81px;--h:90px" href="main.html" aria-label="Главная"></a>
-  <a class="a" style="--x:15.7px;--y:763.5px;--w:38.6px;--h:35.5px" href="main.html" tabindex="-1" aria-hidden="true"><img src="../images/icons/ic-nav-home.svg" alt="" width="38.6" height="35.5"></a>
-  <span class="a tx" style="--x:11.0px;--y:811.9px;font-size:12px;line-height:17px;color:#428266;font-weight:500" data-w="45.5">Главная</span>
-  <a class="a hit" style="--x:75.1px;--y:754px;--w:81px;--h:90px" href="training.html" aria-label="Тренировка"></a>
-  <a class="a" style="--x:98.8px;--y:764.7px;--w:34.4px;--h:31.4px" href="training.html" tabindex="-1" aria-hidden="true"><img src="../images/icons/ic-nav-chat.svg" alt="" width="34.4" height="31.4"></a>
-  <span class="a tx" style="--x:80.3px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="69.1">Тренировка</span>
-  <a class="a hit" style="--x:156.2px;--y:754px;--w:81px;--h:90px" href="kb-1.html" aria-label="База"></a>
-  <a class="a" style="--x:177.7px;--y:763.0px;--w:38.7px;--h:36.1px" href="kb-1.html" tabindex="-1" aria-hidden="true"><img src="../images/icons/ic-nav-books.svg" alt="" width="38.7" height="36.1"></a>
-  <span class="a tx" style="--x:183.0px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="25.9">База</span>
-  <a class="a hit" style="--x:240.1px;--y:754px;--w:81px;--h:90px" href="analytics.html" aria-label="Прогресс"></a>
-  <a class="a" style="--x:262.5px;--y:766.7px;--w:31.0px;--h:28.6px" href="analytics.html" tabindex="-1" aria-hidden="true"><img src="../images/icons/ic-nav-chart.svg" alt="" width="31.0" height="28.6"></a>
-  <span class="a tx" style="--x:252.0px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="55.6">Прогресс</span>
-  <a class="a hit" style="--x:318.2px;--y:754px;--w:81px;--h:90px" href="profile-1.html" aria-label="Я"></a>
-  <a class="a" style="--x:341.8px;--y:763.8px;--w:34.4px;--h:34.4px" href="profile-1.html" tabindex="-1" aria-hidden="true"><img src="../images/icons/ic-nav-profile.svg" alt="" width="34.4" height="34.4"></a>
-  <span class="a tx" style="--x:354.7px;--y:811.9px;font-size:12px;line-height:17px;color:#000;font-weight:500" data-w="6.5">Я</span>
 </main>
-<script src="../js/fit.js"></script>
 </body>
 </html>

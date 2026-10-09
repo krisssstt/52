@@ -2,10 +2,14 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
   <title>AI-интервьюер — Итоги сессии</title>
   <link rel="stylesheet" href="../css/training-session.css">
-  <script src="../js/training-session.js" defer></script>
+  <script src="../js/daily-tasks.js" defer></script>
+<script src="../js/training-session.js" defer></script>
+<link rel="stylesheet" href="../css/ui.css">
+<script src="../js/app.js" defer></script>
+<script src="../js/notifications.js" defer></script>
 </head>
 <body>
   <div class="session-viewport">
@@ -23,17 +27,17 @@
         <aside class="results-recommendation" aria-labelledby="recommendation-title">
           <img src="../images/icons/ic-results-brain.svg" alt="">
           <h3 id="recommendation-title">AI-Рекомендация</h3>
-          <p>Повторите SQL JOIN: на этой<br>теме больше всего ошибок.</p>
+          <p>Повторите SQL JOIN: на этой теме больше всего ошибок.</p>
         </aside>
         <button class="results-review" id="review-answers" type="button" aria-haspopup="dialog" aria-controls="review-dialog"><span>Разобрать ответы</span></button>
         <a class="results-analytics" href="analytics.html">К аналитике</a>
-        <nav class="results-navigation" aria-label="Основная навигация">
-          <a href="main.html"><img src="../images/icons/ic-results-home.svg" alt=""><span>Главная</span></a>
-          <a href="training.html"><img src="../images/icons/ic-results-chat.svg" alt=""><span>Тренировка</span></a>
-          <a href="kb-1.html"><img src="../images/icons/ic-results-books.svg" alt=""><span>База</span></a>
-          <a href="analytics.html" aria-current="page"><img src="../images/icons/ic-results-chart.svg" alt=""><span>Прогресс</span></a>
-          <a href="profile-1.html"><img src="../images/icons/ic-results-profile.svg" alt=""><span>Я</span></a>
-        </nav>
+  <nav class="app-nav" aria-label="Основная навигация">
+    <a href="main.html"><img src="../images/icons/ic-nav-home-off.svg" alt=""><span>Главная</span></a>
+    <a href="training.html"><img src="../images/icons/ic-nav-chat.svg" alt=""><span>Тренировка</span></a>
+    <a href="kb-1.html"><img src="../images/icons/ic-nav-books.svg" alt=""><span>База</span></a>
+    <a href="analytics.html" aria-current="page"><img src="../images/icons/ic-nav-chart-on.svg" alt=""><span>Прогресс</span></a>
+    <a href="profile-1.html"><img src="../images/icons/ic-nav-profile.svg" alt=""><span>Профиль</span></a>
+  </nav>
       </div>
       <div class="review-overlay" id="review-overlay" hidden>
         <section class="review-dialog" id="review-dialog" role="dialog" aria-modal="true" aria-labelledby="review-title">

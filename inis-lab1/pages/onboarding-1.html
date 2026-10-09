@@ -2,13 +2,15 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 <title>AI-интервьюер — Onboarding 1</title>
 <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/ui.css">
+<link rel="stylesheet" href="../css/onboarding.css">
 </head>
-<body>
-<main class="screen">
-  <header class="topbar">
+<body class="onboarding">
+<main class="onboarding-screen">
+<header class="topbar">
     <div class="brand">
       <!-- Экспортируй Vector (узел 1:6) из Figma как SVG в images/logo.svg -->
       <img class="logo" src="../images/logo.svg" alt="" width="24" height="24">
@@ -16,14 +18,14 @@
     </div>
     <a class="skip" href="register.html">Пропустить</a>
   </header>
-  <!-- Экспортируй "image 3" (узел 1:19) в images/onboarding-1.png -->
-  <img class="hero" src="../images/onboarding-1.png" alt="Иллюстрация: подготовка к IT-интервью" width="300" height="289">
-  <h1 class="h1">Готовьтесь к<br>IT-интервью уверенно</h1>
-  <p class="lead">Практика, персональные рекомендации и понятный путь к следующему офферу</p>
-  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
-  <p class="counter">1 из 4</p>
-  <a class="btn" href="onboarding-2.html">Начать знакомство</a>
-  <p class="sub">Уже есть аккаунт? <a href="login.html">Войти</a></p>
+<div class="onboarding-scroll"><div class="onboarding-content">
+<img class="onboarding-illustration" src="../images/onboarding-1.png" alt="Иллюстрация: подготовка к IT-интервью" width="300" height="289">
+<h1 class="onboarding-title">Готовьтесь к IT-интервью уверенно</h1>
+<p class="onboarding-description">Практика, персональные рекомендации и понятный путь к следующему офферу</p>
+
+<div class="onboarding-progress"><div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div><p class="counter">1 из 4</p></div>
+<a class="form-button" href="onboarding-2.html">Начать знакомство</a><p class="onboarding-note">Уже есть аккаунт? <a class="text-link" href="login.html">Войти</a></p>
+</div></div>
 </main>
 </body>
 </html>
